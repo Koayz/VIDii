@@ -1,0 +1,90 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html, body {
+  height:100%;
+  margin:0;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+
+
+/* jouw CSS vanaf hier */
+
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(80,166,53,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+article ul {
+  margin: 0;
+  list-style: none;
+
+}
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+article > ul > li  {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+ 
+  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+article > ul > li > ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+article > ul:hover > li ul {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+article > ul > li > ul > li:first-of-type, article > ul > li > ul > li:last-of-type {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+article > ul > li > ul > li:first-of-type {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+article > ul > li > ul > li:last-of-type {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+
+} 
+
+
+
+
+
+
+
+/* Eevee positie styling */
+
+article:nth-of-type(2) > img {
+  display: block;
+  margin: auto;
+}
