@@ -1,11 +1,13 @@
 // JavaScript Document
 
+// Dit is de eevee
+var eevee = document.querySelector(".eevee");
 
-var eevee = document.querySelector("article:nth-of-type(2) > img ");
+// Klik op deze variable om het te veranderen
+var duskstone = document.querySelector(".duskstone");
 
-eevee.addEventListener("click", veranderEevee);
+duskstone.addEventListener("click", verander);
 
-function veranderEevee(){
-  eevee.classList.toggle("flareon");
+function verander() {
+  eevee.src = "../images/Eevees/Flareon.png";
 }
-

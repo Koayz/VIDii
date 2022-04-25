@@ -1,7 +1,12 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+ 
+  
 }
+
+
+
 
 html, body {
   height:100%;
@@ -17,15 +22,25 @@ button:not([disabled]) {
 /* jouw CSS vanaf hier */
 
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(80,166,53,1) 35%, rgba(0,212,255,1) 100%);
+  background: rgb(152,228,43);
+background: linear-gradient(0deg, rgba(152,228,43,1) 12%, rgba(89,219,127,1) 47%, rgba(52,235,230,1) 100%);
   
 }
 
 
+/* styling kop (webkit zorgt ervoor dat ik een text stroke kan renderen */
+section h1 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 5em;
+  color: rgb(247, 223, 7);
+  -webkit-text-stroke: 0.04em rgb(16, 16, 134);
+  font-family: 'Pokemon Solid', sans-serif;
+}
 
 article ul {
-  margin: 0;
+  margin: 0 0 0 4em;
   list-style: none;
   display: flex;
 
@@ -66,11 +81,11 @@ article > ul > li > ul > li:first-of-type, article > ul > li > ul > li:last-of-t
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing)
+/* Style the front side (fallback if image is missing) */
 article > ul > li > ul > li:first-of-type {
   background-color: #bbb;
   color: black;
-} */
+}
 
 
 article > ul > li > ul > li > img {
@@ -90,12 +105,12 @@ ACHTERKANT KAART STIJL
 
 
 
-/* Style the back side */
+/* Hieronder staat de standaard styling van de kaarten */
 article > ul > li > ul > li:last-of-type {
-  background: rgb(125,58,180);
-  background: linear-gradient(90deg, rgba(125,58,180,1) 0%, rgba(29,199,253,1) 50%, rgba(99,69,252,1) 100%);
+  background: rgb(176,88,247);
+  background: linear-gradient(90deg, rgba(176,88,247,1) 0%, rgba(139,16,219,1) 44%, rgba(60,37,215,1) 100%);
   border-style: solid;
-  border-width: 10px;
+  border-width: 0.625em;
   border-color: rgb(252, 211, 3);
   border-radius: 0.1em;
   color: white;
@@ -104,13 +119,29 @@ article > ul > li > ul > li:last-of-type {
 
 } 
 
+article > ul > li > ul > li:last-of-type > h2 {
+  color: black;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1em;
+  text-align: left;
+  background: rgb(242,242,242);
+  background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(226,226,226,1) 42%, rgba(190,190,190,1) 100%);
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  margin: 0 0 0 0;
+  border-radius: 0.2em;
+  box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
+
+}
+
 article > ul > li > ul > li:last-of-type > h3 {
 color: black;
+font-family: monospace;
 font-size: 1em;
 font-weight: bold;
 text-align: left;
-background: rgb(191,190,190);
-background: linear-gradient(90deg, rgba(191,190,190,1) 0%, rgba(102,102,102,1) 50%, rgba(99,99,99,1) 100%);
+background: rgb(242,242,242);
+background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(226,226,226,1) 42%, rgba(190,190,190,1) 100%);
 padding: 0.2em 0 0.2em 0.4em;
 margin: 0 0 0 0;
 border-radius: 0.2em;
@@ -127,6 +158,7 @@ color: black;
 font-size: 0.8em;
 font-weight: lighter;
 text-align: center;
+height: 9em;
 margin: 0 0.5em 3em 0.5em;
 padding: 1em 0.5em 1em 0.3em;
 border-style: solid;
@@ -134,14 +166,90 @@ border-color: rgb(140, 140, 137);
 border-width: 0.1em;
 border-radius: 0.1em;
 box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
-background: rgb(191,190,190, 0.3)
+background: rgb(191,190,190, 0.6)
 
 
 }
+
+
+
+/* Dawnstone styling */
+article > ul > li:nth-of-type(2) > ul > li {
+  background: rgb(217,217,217);
+  background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(89,240,210,1) 44%, rgba(114,95,241,1) 100%);
+  
+} 
+
+/* Firestone styling */
+article > ul > li:nth-of-type(3) > ul > li {
+  background: rgb(249,234,58);
+  background: linear-gradient(90deg, rgba(249,234,58,1) 0%, rgba(240,193,89,1) 27%, rgba(241,95,95,1) 100%); 
+} 
+
+/* Thunderstone styling */
+article > ul > li:nth-of-type(4) > ul > li {
+  background: rgb(171,253,255);
+  background: linear-gradient(90deg, rgba(171,253,255,1) 0%, rgba(248,244,133,1) 47%, rgba(242,237,39,1) 100%);
+} 
+
+/* Leafstone styling */
+article > ul > li:nth-of-type(5) > ul > li {
+  background: rgb(229,255,171);
+  background: linear-gradient(90deg, rgba(229,255,171,1) 0%, rgba(174,248,133,1) 47%, rgba(39,242,42,1) 100%);
+} 
+
+/* Shinystone styling */
+article > ul > li:nth-of-type(6) > ul > li {
+  background: rgb(222,255,215);
+  background: linear-gradient(90deg, rgba(222,255,215,1) 0%, rgba(226,248,133,1) 47%, rgba(242,189,39,1) 100%);
+} 
+
+/* Waterstone styling */
+article > ul > li:nth-of-type(7) > ul > li {
+  background: rgb(110,186,255);
+  background: linear-gradient(90deg, rgba(110,186,255,1) 0%, rgba(13,184,244,1) 47%, rgba(0,52,179,1) 100%);
+} 
+
+/* Sun Stone styling */
+article > ul > li:nth-of-type(8) > ul > li {
+  background: rgb(249,219,186);
+  background: linear-gradient(90deg, rgba(249,219,186,1) 0%, rgba(249,146,98,1) 47%, rgba(245,57,0,1) 100%);
+} 
+
 
 /* Eevee positie styling */
 
 article:nth-of-type(2) > img {
   display: block;
   margin: auto;
+  margin-top: 4em;
+  width: 18em;
+  height: 18.75em;
 }
+
+/* 
+
+verandering eevee
+
+
+*/
+
+/* 
+article:nth-of-type(2) > img.duskstone {
+  display: block;
+  margin: auto;
+  margin-top: 4em;
+  width: 18em;
+  height: 18.75em;
+} */
+
+article:nth-of-type(2) > img.duskstone {
+content: url(https://assets.codepen.io/274456/ft-icon-prince.svg);
+}
+
+
+
+
+/* Cursor veranderen naar pokeball */ 
+
+* {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;} /* End https://www.cursors-4u.com */
