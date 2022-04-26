@@ -41,32 +41,32 @@ function veranderDawn() {
 }
 
 function veranderFire() {
-  eevee.src = "../images/eevees/flareon.png";
+  eevee.src = "./images/eevees/flareon.png";
   eeveeNaam.innerHTML = "Flareon";
 }
 
 function veranderThunder() {
-  eevee.src = "../images/eevees/jolteon.png";
+  eevee.src = "./images/eevees/jolteon.png";
   eeveeNaam.innerHTML = "Jolteon";
 }
 
 function veranderLeaf() {
-  eevee.src = "../images/eevees/leafeon.png";
+  eevee.src = "./images/eevees/leafeon.png";
   eeveeNaam.innerHTML = "Leafeon";
 }
 
 function veranderShiny() {
-  eevee.src = "../images/eevees/glaceon.png";
+  eevee.src = "./images/eevees/glaceon.png";
   eeveeNaam.innerHTML = "Glaceon";
 }
 
 function veranderWater() {
-  eevee.src = "../images/eevees/vaporeon.png";
+  eevee.src = "./images/eevees/vaporeon.png";
   eeveeNaam.innerHTML = "vaporeon";
 }
 
 function veranderSun() {
-  eevee.src = "../images/eevees/sylveon.png";
+  eevee.src = "./images/eevees/sylveon.png";
   eeveeNaam.innerHTML = "Sylveon";
 }
 
