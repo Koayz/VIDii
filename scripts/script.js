@@ -31,7 +31,7 @@ sunStone.addEventListener("click", veranderSun);
 
 // verander naam + image 
 function veranderDusk() {
-  eevee.src = "..images/eevees/umbreon.png";
+  eevee.src = "./images/eevees/umbreon.png";
   eeveeNaam.innerHTML = "Umbreon";
 }
 
