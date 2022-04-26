@@ -29,13 +29,14 @@ shinyStone.addEventListener("click", veranderShiny);
 waterStone.addEventListener("click", veranderWater);
 sunStone.addEventListener("click", veranderSun);
 
+// verander naam + image 
 function veranderDusk() {
-  eevee.src = "../images/eevees/umbreon.png";
+  eevee.src = "..images/eevees/umbreon.png";
   eeveeNaam.innerHTML = "Umbreon";
 }
 
 function veranderDawn() {
-  eevee.src = "../images/eevees/espeon.png";
+  eevee.src = "..images/eevees/espeon.png";
   eeveeNaam.innerHTML = "Espeon";
 }
 
