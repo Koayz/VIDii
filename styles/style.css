@@ -1,11 +1,6 @@
 /* CSS Document */
-
-
-
 *, *::after, *::before {
   box-sizing:border-box;  
- 
-  
 }
 
 /* font */
@@ -33,8 +28,7 @@ button:not([disabled]) {
 
 body {
   background: rgb(152,228,43);
-background: linear-gradient(0deg, rgba(152,228,43,1) 12%, rgba(89,219,127,1) 47%, rgba(52,235,230,1) 100%);
-  
+  background: linear-gradient(0deg, rgba(152,228,43,1) 12%, rgba(89,219,127,1) 47%, rgba(52,235,230,1) 100%);
 }
 
 
@@ -60,6 +54,7 @@ article ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
  /* kaart flip container */
@@ -397,7 +392,6 @@ EINDE STYLING ALLE KAARTEN
 
 
 /* Styling van eevee + naam  */
-
 article:nth-of-type(2) > img {
   display: block;
   margin: auto;
