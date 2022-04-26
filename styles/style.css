@@ -9,7 +9,6 @@
 }
 
 /* font */
-
 @font-face {
   font-family: 'Pokemon Solid';
   font-style: normal;
@@ -30,7 +29,6 @@ button:not([disabled]) {
 /* jouw CSS vanaf hier */
 
 /* Cursor veranderen naar pokeball */ 
-
 * {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;} 
 
 body {
@@ -51,18 +49,20 @@ section h1 {
   font-family: 'Pokemon Solid', sans-serif;
 }
 
+/* button styling weghalen */
 button {
   border: none;
   background: none;
 }
 
+/* positie + weghalen styling ul */
 article ul {
-  margin: 0 0 0 4em;
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ /* kaart flip container */
 article > ul > li  {
   background-color: transparent;
   width: 12.5em;
@@ -117,14 +117,11 @@ article > ul > li > ul > li:first-of-type > img{
 
 
 
-
 /* 
 
-ACHTERKANT KAART STIJL
+BEGIN ACHTERKANT KAART STIJL
 
 */
-
-
 
 /* Hieronder staat de standaard styling van de kaarten */
 article > ul > li > ul > li:last-of-type {
@@ -213,6 +210,7 @@ animation: glowDusk 1s infinite alternate;
     border-radius: 0.1em;
 }
 }
+
 /* 
 
 EINDE ACHTERKANT KAART STIJL
@@ -220,6 +218,13 @@ EINDE ACHTERKANT KAART STIJL
 */
 
 
+
+
+/* 
+
+BEGIN STYLING ALLE KAARTEN
+
+*/
 
 /* Dawnstone styling */
 article > ul > li:nth-of-type(2) > ul > li {
@@ -382,11 +387,16 @@ article > ul > li:nth-of-type(8) > ul > li:last-of-type > button {
   }
 
 
+
 /* 
 
-Styling van eevee + naam
+EINDE STYLING ALLE KAARTEN
 
 */
+
+
+
+/* Styling van eevee + naam  */
 
 article:nth-of-type(2) > img {
   display: block;
@@ -406,20 +416,3 @@ h4 {
   font-family: 'Pokemon Solid', sans-serif;
 }
 
-
-
-
-article:nth-of-type(2) > img {
-  animation-name: change;
-}
-
-#change {
-  transition: opacity 1s ease-out;
-  position: absolute;
-}
-
-#change2 {
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  position: absolute;
-}
