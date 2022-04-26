@@ -36,7 +36,7 @@ function veranderDusk() {
 }
 
 function veranderDawn() {
-  eevee.src = "..images/eevees/espeon.png";
+  eevee.src = "./images/eevees/espeon.png";
   eeveeNaam.innerHTML = "Espeon";
 }
 
