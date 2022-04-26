@@ -1,12 +1,21 @@
 /* CSS Document */
+
+
+
 *, *::after, *::before {
   box-sizing:border-box;  
  
   
 }
 
+/* font */
 
-
+@font-face {
+  font-family: 'Pokemon Solid';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pokemon Solid'), url('https://fonts.cdnfonts.com/s/17890/Pokemon Solid.woff') format('woff');
+}
 
 html, body {
   height:100%;
@@ -61,7 +70,7 @@ article > ul > li  {
   perspective: 62.5em; 
 }
 
-/* This container is needed to position the front and back side */
+/* De container van de voor en achterkant + schaduw */
 article > ul > li > ul {
   position: relative;
   width: 100%;
@@ -75,13 +84,13 @@ article > ul > li > ul {
 }
 
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Flip animatie en tab animatie draait 180graden */
 article > ul > li > ul:hover, 
 article > ul > li > ul:focus-within {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+/* Positie voor en achterkant (webkit uitleggen) */
 article > ul > li > ul > li:first-of-type, 
 article > ul > li > ul > li:last-of-type {
   position: absolute;
@@ -92,7 +101,7 @@ article > ul > li > ul > li:last-of-type {
   border-radius: 1.2em;
 }
 
-/* Style the front side (fallback if image is missing) */
+/* Fallback als de image niet laad */
 article > ul > li > ul > li:first-of-type {
   background-color: #bbb;
   color: black;
@@ -160,8 +169,7 @@ border-radius: 0.2em;
 box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
 }
 
-
-/* achter ronding! */
+/* Image grootte van de evolutiestenen */
 article > ul > li > ul > li:last-of-type > img {
 width: 10.5em;
 height: 7em;
@@ -185,16 +193,31 @@ background: rgb(191,190,190, 0.6)
 
 }
 
+
+/* Button, zodat het klikbaar / tabbaar is */
+/* Tevens ook de basis styling van de eerste kaart */
 article > ul > li > ul > li:last-of-type > button {
 position: absolute;
 inset: 0;
 width: 100%;
-border-style: solid;
-background-color: blue;
-border-color: rgb(140, 140, 137);
+animation: glowDusk 1s infinite alternate;
 }
 
+@keyframes glowDusk {
+  from {
+    box-shadow: 0 0 0.625em -0.625em rgb(255, 235, 8);
+    border-radius: 0.1em;
+  }
+  to {
+    box-shadow: 0 0 0.625em 0.625em rgb(181, 29, 241); 
+    border-radius: 0.1em;
+}
+}
+/* 
 
+EINDE ACHTERKANT KAART STIJL
+
+*/
 
 
 
@@ -205,11 +228,43 @@ article > ul > li:nth-of-type(2) > ul > li {
   
 } 
 
+article > ul > li:nth-of-type(2) > ul > li:last-of-type > button {
+animation: glowDawn 1s infinite alternate;
+}
+
+@keyframes glowDawn {
+  from {
+    box-shadow: 0 0 0.625em -0.625em rgb(255, 235, 8);
+    border-radius: 0.1em;
+  }
+  to {
+    box-shadow: 0 0 0.625em 0.625em rgb(29, 29, 241); 
+    border-radius: 0.1em;
+}
+
+}
+
 /* Firestone styling */
 article > ul > li:nth-of-type(3) > ul > li {
   background: rgb(249,234,58);
   background: linear-gradient(90deg, rgba(249,234,58,1) 0%, rgba(240,193,89,1) 27%, rgba(241,95,95,1) 100%); 
 } 
+
+article > ul > li:nth-of-type(3) > ul > li:last-of-type > button {
+  animation: glowFire 1s infinite alternate;
+  }
+  
+  @keyframes glowFire {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(241, 54, 29); 
+      border-radius: 0.1em;
+  }
+  
+  }
 
 /* Thunderstone styling */
 article > ul > li:nth-of-type(4) > ul > li {
@@ -217,11 +272,45 @@ article > ul > li:nth-of-type(4) > ul > li {
   background: linear-gradient(90deg, rgba(171,253,255,1) 0%, rgba(248,244,133,1) 47%, rgba(242,237,39,1) 100%);
 } 
 
+
+article > ul > li:nth-of-type(4) > ul > li:last-of-type > button {
+  animation: glowThunder 1s infinite alternate;
+  }
+  
+  @keyframes glowThunder {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(4, 134, 143); 
+      border-radius: 0.1em;
+  }
+  
+  }
+
 /* Leafstone styling */
 article > ul > li:nth-of-type(5) > ul > li {
   background: rgb(229,255,171);
   background: linear-gradient(90deg, rgba(229,255,171,1) 0%, rgba(174,248,133,1) 47%, rgba(39,242,42,1) 100%);
 } 
+
+
+article > ul > li:nth-of-type(5) > ul > li:last-of-type > button {
+  animation: glowLeaf 1s infinite alternate;
+  }
+  
+  @keyframes glowLeaf {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(54, 241, 29); 
+      border-radius: 0.1em;
+  }
+  
+  }
 
 /* Shinystone styling */
 article > ul > li:nth-of-type(6) > ul > li {
@@ -229,11 +318,45 @@ article > ul > li:nth-of-type(6) > ul > li {
   background: linear-gradient(90deg, rgba(222,255,215,1) 0%, rgba(226,248,133,1) 47%, rgba(242,189,39,1) 100%);
 } 
 
+
+article > ul > li:nth-of-type(6) > ul > li:last-of-type > button {
+  animation: glowShiny 1s infinite alternate;
+  }
+  
+  @keyframes glowShiny {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(161, 132, 1); 
+      border-radius: 0.1em;
+  }
+  
+  }
+
 /* Waterstone styling */
 article > ul > li:nth-of-type(7) > ul > li {
   background: rgb(110,186,255);
   background: linear-gradient(90deg, rgba(110,186,255,1) 0%, rgba(13,184,244,1) 47%, rgba(0,52,179,1) 100%);
 } 
+
+
+article > ul > li:nth-of-type(7) > ul > li:last-of-type > button {
+  animation: glowWater 1s infinite alternate;
+  }
+  
+  @keyframes glowWater {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(29, 191, 241); 
+      border-radius: 0.1em;
+  }
+  
+  }
 
 /* Sun Stone styling */
 article > ul > li:nth-of-type(8) > ul > li {
@@ -242,7 +365,28 @@ article > ul > li:nth-of-type(8) > ul > li {
 } 
 
 
-/* Eevee positie styling */
+article > ul > li:nth-of-type(8) > ul > li:last-of-type > button {
+  animation: glowSun 1s infinite alternate;
+  }
+  
+  @keyframes glowSun {
+    from {
+      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      border-radius: 0.1em;
+    }
+    to {
+      box-shadow: 0 0 0.625em 0.625em rgb(184, 98, 0); 
+      border-radius: 0.1em;
+  }
+  
+  }
+
+
+/* 
+
+Styling van eevee + naam
+
+*/
 
 article:nth-of-type(2) > img {
   display: block;
@@ -264,3 +408,18 @@ h4 {
 
 
 
+
+article:nth-of-type(2) > img {
+  animation-name: change;
+}
+
+#change {
+  transition: opacity 1s ease-out;
+  position: absolute;
+}
+
+#change2 {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  position: absolute;
+}
