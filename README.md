@@ -190,13 +190,13 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
-  Ik heb geleerd beter met css te stijlen op basis van een plaatje. Ik had een pokemon kaart tijdens het cssen er naast gezet en ben zo langzamerhand deze gaan na maken.
   <img src="readme-images/voorbeeld2.png" width="375px" alt="top">
+  Ik heb geleerd beter met css te stijlen op basis van een plaatje. Ik heb een pokemon kaart tijdens het cssen er naast gezet en ben zo langzamerhand deze     gaan na maken. Verder had ik zelf ook niet verwacht dat ik bepaalde keuzes die ik maakte begreep. En merkte dat ik vrij doelgericht probeerde 1 voor 1 een   probleem op te lossen. Normaliter ben ik niet zo geduldig tijdens het coderen, maar door de rust te houden ben ik er wel stukke stressvrijer door heen       gekomen.
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
-   Het is me jammer genoeg niet gelukt een keyframe animatie te maken van de transitie tussen pokemons. Ik had gelezen dat het te maken had met het feit dat ik de image inlaad via javascript en heb geprobeerd dit in css nog aan te passen maar dit lukte jammer genoeg niet. 
+   Het is me jammer genoeg niet gelukt een keyframe animatie te maken van de transitie tussen pokemons. Ik had gelezen dat het te maken had met het feit dat    ik de image inlaad via javascript en heb geprobeerd dit in css nog aan te passen maar dit lukte jammer genoeg niet. Verder wilde ik een evolutie geluid      laten afspelen met daarbij het geluid van de eevee (elke evolutie heeft een ander geluid), maar door te weinig tijd + omdat ik de keyframe animaties er      niet in kreeg is dit ook niet als gevolg gelukt jammer genoeg
   <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
 </details>
 
