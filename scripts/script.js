@@ -62,7 +62,7 @@ function veranderShiny() {
 
 function veranderWater() {
   eevee.src = "./images/eevees/vaporeon.png";
-  eeveeNaam.innerHTML = "vaporeon";
+  eeveeNaam.innerHTML = "Vaporeon";
 }
 
 function veranderSun() {
