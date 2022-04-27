@@ -3,7 +3,7 @@
   box-sizing:border-box;  
 }
 
-/* font */
+/* Font */
 @font-face {
   font-family: 'Pokemon Solid';
   font-style: normal;
@@ -32,7 +32,7 @@ body {
 }
 
 
-/* styling kop (webkit zorgt ervoor dat ik een text stroke kan renderen */
+/* Styling kop (webkit zorgt ervoor dat ik een text stroke kan renderen */
 section h1 {
   display: block;
   margin: auto;
@@ -43,13 +43,13 @@ section h1 {
   font-family: 'Pokemon Solid', sans-serif;
 }
 
-/* button styling weghalen */
+/* Button styling weghalen */
 button {
   border: none;
   background: none;
 }
 
-/* positie + weghalen styling ul */
+/* Positie + weghalen styling ul */
 article ul {
   list-style: none;
   display: flex;
@@ -57,7 +57,7 @@ article ul {
   margin: 0;
 }
 
- /* kaart flip container */
+ /* Kaart flip container */
 article > ul > li  {
   background-color: transparent;
   width: 12.5em;
@@ -102,7 +102,7 @@ article > ul > li > ul > li:first-of-type {
   color: black;
 }
 
-/* voorkant ronding and vorm  */
+/* Voorkant ronding and vorm  */
 article > ul > li > ul > li:first-of-type > img{
   width: 12.5em;
   height: 18.75em;
