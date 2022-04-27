@@ -138,13 +138,13 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   De pokemon kaart was niet mooi afgerond, waardoor er witruimte was
 
   #### oplossing:
-  Border radius toegepast aan de voor en achterkant, zodat het gelijk is (ook aan de boxshadow, zodat het de vorm volgt)
+  Border radius toegepast aan de voorkant, zodat het gelijk is (ook aan de boxshadow, zodat het de vorm volgt)
 
   ### Bevinding 2:
-  Toevoegen button om het selecterbaar te maken werkt niet, omdat dan de css stijl van de kaart er niet meer is
-
+  Volgorde code klopte niet, elementen die voor de hele pagina waren stonden onderaan (zoals cursor of font)
+ 
   #### oplossing:
-  Button onder de kaart doen, maar positioneren en stijlen. Dit zorgde ervoor dat de pokemon kaart te stijlen is met een leuke effect indien deze of :hover wordt of getabbed wordt. 
+  Nogmaals door de code gegaan, zodat zulke elementen netjes bovenaan staan
 
   ### Bevinding 3:
   Toevoegen button om het selecteerbaar te maken werkt niet, omdat dan de css stijl van de kaart er niet meer is
