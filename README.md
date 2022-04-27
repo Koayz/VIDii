@@ -190,7 +190,9 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
-  <img src="readme-images/voorbeeld2.png" width="200px" height="375px"alt="top">
+  <img src="readme-images/voorbeeld2.png" width="375px" alt="top">
+  
+  
   Ik heb geleerd beter met css te stijlen op basis van een plaatje. Ik heb een pokemon kaart tijdens het cssen er naast gezet en ben zo langzamerhand deze     gaan na maken. Verder had ik zelf ook niet verwacht dat ik bepaalde keuzes die ik maakte begreep. En merkte dat ik vrij doelgericht probeerde 1 voor 1 een   probleem op te lossen. Normaliter ben ik niet zo geduldig tijdens het coderen, maar door de rust te houden ben ik er wel stukke stressvrijer door heen       gekomen.
 
 
