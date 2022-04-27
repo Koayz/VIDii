@@ -163,6 +163,12 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
   #### oplossing:
   ./images ipv ../images en opgelet onder eigenschappen of er niet PNG of png stond (github is case sensitive)
+  
+  ### Bevinding 6:
+  De informatie onder de stenen, is niet erg informatief
+
+  #### oplossing:
+  Informatie opgezocht over het gebruik van de stenen en in welke toepassing, zodat de lezer meer heeft aan de informatie
     
     
 
