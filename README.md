@@ -55,7 +55,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Idee 1 (pacman tijdlijn) is niet divers genoeg
 
   #### oplossing:
-  Nieuw idee bedacht waarbij ik heb gekozen om ipv het tijdlijn idee met pacman te kiezen voor
+  Nieuw idee bedacht waarbij ik heb gekozen om ipv het tijdlijn idee met pacman te kiezen voor de eeveelutions met pokemonkaarten
 
   ### Bevinding 2:
   Te veel gebruik van classes ik heb ondervonden dat het gebruik van selectoren (elementen) gewenst is 
@@ -64,22 +64,22 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Opgezocht op w3 school hoe dit ongeveer werkte om mijn geheugen op te frissen
     
   ### Bevinding 3:
-  Card flip werkt niet
+  Card flip werkt niet + shadows staan niet in positie
 
   #### oplossing:
-  Gekeken of ik juist de selectoren had gebruikt dit bleek niet te kloppen
+  Gekeken naar de selectoren én de grootte van de boxshadows + kaart en dit aangepast naar de gewenste grootte
   
   ### Bevinding 4:
-  Kan maar 1 kaart laten zien
+  Ik kan maar 1 kaart laten zien op 1 rij als ik er meer toevoeg staan deze onder elkaar en niet naast elkaar
 
   #### oplossing:
-  Gevraagd aan rowin hoe ik er voor zorg dat ik just article ul li ul li toon met daarbij een kaart, zodat ze ook apart aan te passen zijn in css
+  Gevraagd aan rowin hoe ik er voor zorg dat ik just article ul li ul li toon met daarbij een kaart, zodat ze ook apart aan te passen zijn in css 
     
   ### Bevinding 5:
-  Kaarten staan niet goed gepositioneerd
+  Kaarten staan niet goed gepositioneerd (wel naast elkaar maar half in elkaar en de flip animatie is veel breder dan de kaart zelf)
 
   #### oplossing:
-  Gekeken in chrome onder padding en deze in css weggehaald indien het niet nodig was (ook een flex container gemaakt met justify content)
+  Gekeken in chrome onder padding en deze in css weggehaald indien het niet nodig was (ook een flex container gemaakt met justify content) Dit zorgde ervoor dat de card flip van juist breedde was.
       
 
       
@@ -102,7 +102,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
 
   ### Bevinding 2:
-  Javascript veranderd de image niet als ik op een kaart klik
+  Javascript veranderd de image niet als bij een kaart click
 
   #### oplossing:
   Getest of dit met een button werkt (dit werkt) uiteindelijk bleek ik de selector niet goed te hebben getypt waardoor ik het element van de kaart niet        selecteerde
