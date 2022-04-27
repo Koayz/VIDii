@@ -39,7 +39,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
     
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - ik wil leren hoe ik iets stijl
+  - ik wil leren hoe ik met css iets nauwkerig stijl en kan namaken
   - Leren kleine interacties toe te voegen
   - Nette code leren typen zonder beautify
  
@@ -55,31 +55,31 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Idee 1 (pacman tijdlijn) is niet divers genoeg
 
   #### oplossing:
-  Nieuw idee bedacht waarbij ik heb gekozen om ipv het tijdlijn idee met pacman te kiezen voor de eeveelutions met pokemonkaarten
+  Nieuw idee bedacht waarbij ik heb gekozen om ipv het tijdlijn idee met pacman te kiezen voor de eeveelutions met pokemonkaarten (rowin vondt dit idee ook beter en een leuke interactie hebben.
 
   ### Bevinding 2:
-  Te veel gebruik van classes ik heb ondervonden dat het gebruik van selectoren (elementen) gewenst is 
+  Te veel gebruik van classes. Ik heb ondervonden dat het gebruik van selectoren (elementen) gewenst is .
 
   #### oplossing:
-  Opgezocht op w3 school hoe dit ongeveer werkte om mijn geheugen op te frissen
+  Opgezocht op w3 school hoe dit ongeveer werkte om mijn geheugen op te frissen en dit meteen gaan toepassen in me code, zodat ik niet later nog classes moet   weghalen en dan nog de selectoren moet uitvogelen. 
     
   ### Bevinding 3:
   Card flip werkt niet + shadows staan niet in positie
 
   #### oplossing:
-  Gekeken naar de selectoren én de grootte van de boxshadows + kaart en dit aangepast naar de gewenste grootte
+  Gekeken naar de selectoren én de grootte van de boxshadows + kaart en dit aangepast naar de gewenste grootte. Door de juiste selectors te gebruiken sprak     ik het juiste element aan in de code. 
   
   ### Bevinding 4:
-  Ik kan maar 1 kaart laten zien op 1 rij als ik er meer toevoeg staan deze onder elkaar en niet naast elkaar
+  Ik kan maar 1 kaart laten zien op 1 rij en als ik er meer toevoeg staan deze onder elkaar en niet naast elkaar
 
   #### oplossing:
-  Gevraagd aan rowin hoe ik er voor zorg dat ik just article ul li ul li toon met daarbij een kaart, zodat ze ook apart aan te passen zijn in css 
+  Gevraagd aan rowin hoe ik er voor zorg dat ik just article ul li ul li toon met daarbij een kaart, zodat ze ook apart aan te passen zijn in css. Door het     correct in de HTML te zetten zorgde ik ervoor dat de kaarten netjes naast elkaar stonden.
     
   ### Bevinding 5:
   Kaarten staan niet goed gepositioneerd (wel naast elkaar maar half in elkaar en de flip animatie is veel breder dan de kaart zelf)
 
   #### oplossing:
-  Gekeken in chrome onder padding en deze in css weggehaald indien het niet nodig was (ook een flex container gemaakt met justify content) Dit zorgde ervoor dat de card flip van juist breedde was.
+  Gekeken in chrome onder padding en deze in css weggehaald indien het niet nodig was (ook een flex container gemaakt met justify content) Dit zorgde ervoor   dat de card flip van juist breedde was.
       
 
       
@@ -95,17 +95,17 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Commentaar is niet duidelijk of in het engels
+  Commentaar is niet duidelijk of in het engels (aaron)
 
   #### oplossing:
   Door mijn commentaar gegaan en deze duidelijker gemaakt voor anderen
 
 
   ### Bevinding 2:
-  Javascript veranderd de image niet als bij een kaart click
+  Javascript veranderd de image niet bij een click op de kaart
 
   #### oplossing:
-  Getest of dit met een button werkt (dit werkt) uiteindelijk bleek ik de selector niet goed te hebben getypt waardoor ik het element van de kaart niet        selecteerde
+  Getest of dit met een button werkt (dit werkt) uiteindelijk bleek ik de selector niet goed te hebben getypt waardoor ik het element van de kaart niet         selecteerde
 
   ### Bevinding 3:
   Ik wil de lettertype van pokemon gebruiken, zodat het meer bij pokemon past. Alleen bij het inladen werkt deze niet op andere devices
@@ -123,7 +123,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Het is nog niet mogelijk om doormiddel van tab door de elementen van mijn pagina te gaan
   
   ### oplossing:
-  Online gekeken en ik kwam erachter dat een image niet selecteerbaar is. De oplossing hiervoor is het een button te maken.
+  Online gekeken en ik kwam erachter dat een image niet selecteerbaar is. De oplossing hiervoor is het een button te maken. Het selecteren van een button       werkt wel, maar hierdoor kwam er wel een nieuw probleem dat ik de button alleen kon selecteren, maar niet de kaart zelf
 
 </details>
 
@@ -156,16 +156,16 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Ik heb hier en daar code staan die niet van toepassing was, maar als test werd gebruikt
 
   #### oplossing:
-  Door me code heen gegaan en verwijderd wat niet nodig was
+  Door me code heen gegaan en verwijderd wat niet nodig was en zo mijn code opgeschoont. 
     
   ### Bevinding 5:
-  Bij het uploaden naar github kwamen de images niet goed over of werden niet goed getoond
+  Bij het uploaden naar github kwamen de images niet goed over of werden niet getoond
 
   #### oplossing:
   ./images ipv ../images en opgelet onder eigenschappen of er niet PNG of png stond (github is case sensitive)
   
   ### Bevinding 6:
-  De informatie onder de stenen, is niet erg informatief
+  De informatie onder de stenen, is niet erg informatief (aaron)
 
   #### oplossing:
   Informatie opgezocht over het gebruik van de stenen en in welke toepassing, zodat de lezer meer heeft aan de informatie
