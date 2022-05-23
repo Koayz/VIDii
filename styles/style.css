@@ -42,12 +42,35 @@
 
 /* Kleuren glowing animatie + rest van de kaarten */
 --glowFrom: rgb(255, 235, 8);
---glowDuskTo: rgb(255, 235, 8); 
-
+--glowDuskTo: rgb(123, 8, 255); 
 
 --colorDawnKaart: rgb(217,217,217);
 --colorDawnGradient: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(89,240,210,1) 44%, rgba(114,95,241,1) 100%);
 --glowDawnTo: rgb(29, 29, 241); 
+
+--colorFireKaart:  rgb(249,234,58);
+--colorFireGradient: linear-gradient(90deg, rgba(249,234,58,1) 0%, rgba(240,193,89,1) 27%, rgba(241,95,95,1) 100%); 
+--glowFireTo: rgb(241, 54, 29);
+
+--colorThunderKaart:  rgb(171,253,255);
+--colorThunderGradient: linear-gradient(90deg, rgba(171,253,255,1) 0%, rgba(248,244,133,1) 47%, rgba(242,237,39,1) 100%);
+--glowThunderTo: rgb(4, 134, 143); 
+
+--colorLeafKaart: rgb(229,255,171);
+--colorLeafGradient: linear-gradient(90deg, rgba(229,255,171,1) 0%, rgba(174,248,133,1) 47%, rgba(39,242,42,1) 100%);
+--glowLeafTo: rgb(54, 241, 29); 
+
+--colorShinyKaart: rgb(222,255,215);
+--colorShinyGradient: linear-gradient(90deg, rgba(222,255,215,1) 0%, rgba(226,248,133,1) 47%, rgba(242,189,39,1) 100%);
+--glowShinyTo: rgb(161, 132, 1); 
+
+--colorWaterKaart: rgb(110,186,255);
+--colorWaterGradient: linear-gradient(90deg, rgba(110,186,255,1) 0%, rgba(13,184,244,1) 47%, rgba(0,52,179,1) 100%);
+--glowWaterTo: rgb(29, 191, 241); 
+
+--colorSunKaart: rgb(249,219,186);
+--colorSunGradient: linear-gradient(90deg, rgba(249,219,186,1) 0%, rgba(249,146,98,1) 47%, rgba(245,57,0,1) 100%);
+--glowSunTo: rgb(184, 98, 0); 
 
 }
 
@@ -100,7 +123,7 @@ article > ul {
 
 /* Weghalen scroll bar chrome,safari en opera */
 article > ul::-webkit-scrollbar {
-display: none; 
+  display: none; 
 }
 
 /* Positie + weghalen styling ul */
@@ -117,9 +140,67 @@ article > ul > li {
   width: 12.5em;
   height: 18.75em;
   perspective: 62.5em; 
-  cursor:pointer;
+  cursor:pointer; 
 }
 
+/* Toevoegen verschillende animaties per kaartje */
+article > ul > li:first-of-type,
+article > ul > li:nth-of-type(4),
+article > ul > li:nth-of-type(7) {
+  animation: animatieEen;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 3;
+}
+
+/* Toevoegen kleine animatie aan het begin om klikbaarheid te tonen */
+@keyframes animatieEen {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+article > ul > li:nth-of-type(2),
+article > ul > li:nth-of-type(5) {
+  animation: animatieTwee;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes animatieTwee {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(0.3125em) }
+  50% { transform: translateY(-0.3125em) }
+  75% { transform: translateY(0.3125em) }
+  100% { transform: translateY(0) }
+}
+
+article > ul > li:nth-of-type(3),
+article > ul > li:nth-of-type(6),
+article > ul > li:nth-of-type(8) {
+  animation: animatieDrie;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes animatieDrie {
+  0% { transform: skewX(-6deg); }
+  5% { transform: skewX(7deg); }
+  10% { transform: skewX(-6deg); }
+  15% { transform: skewX(7deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+
+}
+
+
+
+
+ 
 /* De container van de voor en achterkant + schaduw */
 article > ul > li > ul {
   position: relative;
@@ -139,8 +220,6 @@ article > ul > li > ul:hover,
 article > ul > li > ul:focus-within     {
   transform: rotateY(180deg);
 } 
-
-
 
 
 /* Zorgt ervoor dat als de kaart actief is de kaart omhoog beweegt */
@@ -290,10 +369,10 @@ BEGIN STYLING ALLE KAARTEN
 
 /* Dawnstone styling */
 article > ul > li:nth-of-type(2) > ul > li {
-  background: rgb(217,217,217);
-  background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(89,240,210,1) 44%, rgba(114,95,241,1) 100%);
-  
+  background: var(--colorDawnKaart);
+  background: var(--colorDawnGradient);
 } 
+
 
 article > ul > li:nth-of-type(2) > ul > li:last-of-type > button {
 animation: glowDawn 1s infinite alternate;
@@ -313,8 +392,8 @@ animation: glowDawn 1s infinite alternate;
 
 /* Firestone styling */
 article > ul > li:nth-of-type(3) > ul > li {
-  background: rgb(249,234,58);
-  background: linear-gradient(90deg, rgba(249,234,58,1) 0%, rgba(240,193,89,1) 27%, rgba(241,95,95,1) 100%); 
+  background: var(--colorFireKaart);
+  background: var(--colorFireGradient);
 } 
 
 article > ul > li:nth-of-type(3) > ul > li:last-of-type > button {
@@ -327,7 +406,7 @@ article > ul > li:nth-of-type(3) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(241, 54, 29); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowFireTo);
       border-radius: 0.1em;
   }
   
@@ -335,8 +414,8 @@ article > ul > li:nth-of-type(3) > ul > li:last-of-type > button {
 
 /* Thunderstone styling */
 article > ul > li:nth-of-type(4) > ul > li {
-  background: rgb(171,253,255);
-  background: linear-gradient(90deg, rgba(171,253,255,1) 0%, rgba(248,244,133,1) 47%, rgba(242,237,39,1) 100%);
+  background: var(--colorThunderKaart);
+  background: var(--colorThunderGradient);
 } 
 
 
@@ -350,7 +429,7 @@ article > ul > li:nth-of-type(4) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(4, 134, 143); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowThunderTo); 
       border-radius: 0.1em;
   }
   
@@ -358,8 +437,8 @@ article > ul > li:nth-of-type(4) > ul > li:last-of-type > button {
 
 /* Leafstone styling */
 article > ul > li:nth-of-type(5) > ul > li {
-  background: rgb(229,255,171);
-  background: linear-gradient(90deg, rgba(229,255,171,1) 0%, rgba(174,248,133,1) 47%, rgba(39,242,42,1) 100%);
+  background: var(--colorLeafKaart);
+  background: var(--colorLeafGradient);
 } 
 
 
@@ -373,7 +452,7 @@ article > ul > li:nth-of-type(5) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(54, 241, 29); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowLeafTo);
       border-radius: 0.1em;
   }
   
@@ -381,8 +460,8 @@ article > ul > li:nth-of-type(5) > ul > li:last-of-type > button {
 
 /* Shinystone styling */
 article > ul > li:nth-of-type(6) > ul > li {
-  background: rgb(222,255,215);
-  background: linear-gradient(90deg, rgba(222,255,215,1) 0%, rgba(226,248,133,1) 47%, rgba(242,189,39,1) 100%);
+  background: var(--colorShinyKaart);
+  background: var(--colorShinyGradient);
 } 
 
 
@@ -396,7 +475,7 @@ article > ul > li:nth-of-type(6) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(161, 132, 1); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowShinyTo);
       border-radius: 0.1em;
   }
   
@@ -404,8 +483,8 @@ article > ul > li:nth-of-type(6) > ul > li:last-of-type > button {
 
 /* Waterstone styling */
 article > ul > li:nth-of-type(7) > ul > li {
-  background: rgb(110,186,255);
-  background: linear-gradient(90deg, rgba(110,186,255,1) 0%, rgba(13,184,244,1) 47%, rgba(0,52,179,1) 100%);
+  background: var(--colorWaterKaart);
+  background: var(--colorWaterGradient);
 } 
 
 
@@ -419,7 +498,7 @@ article > ul > li:nth-of-type(7) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(29, 191, 241); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowWaterTo);
       border-radius: 0.1em;
   }
   
@@ -427,8 +506,8 @@ article > ul > li:nth-of-type(7) > ul > li:last-of-type > button {
 
 /* Sun Stone styling */
 article > ul > li:nth-of-type(8) > ul > li {
-  background: rgb(249,219,186);
-  background: linear-gradient(90deg, rgba(249,219,186,1) 0%, rgba(249,146,98,1) 47%, rgba(245,57,0,1) 100%);
+  background: var(--colorSunKaart);
+  background: var(--colorSunGradient);
 } 
 
 
@@ -442,7 +521,7 @@ article > ul > li:nth-of-type(8) > ul > li:last-of-type > button {
       border-radius: 0.1em;
     }
     to {
-      box-shadow: 0 0 0.625em 0.625em rgb(184, 98, 0); 
+      box-shadow: 0 0 0.625em 0.625em var(--glowSunTo);
       border-radius: 0.1em;
   }
   
@@ -472,8 +551,9 @@ h4 {
   margin: auto;
   text-align: center;
   font-size: 2em;
-  color: rgb(247, 223, 7);
-  -webkit-text-stroke: 0.04em rgb(16, 16, 134);
+  color: var(--colorKop);
+  -webkit-text-stroke: 0.04em var(--colorKopStroke);
   font-family: 'Pokemon Solid', sans-serif;
 }
+
 
