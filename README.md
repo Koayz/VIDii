@@ -28,7 +28,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 # Je plan
 
 <details open>
-  <summary> Me plan is om in de lessen problemen aan te pakken die ik thuis niet kan oplossen door hulp te vragen </summary>
+  <summary> Aan het begin had ik gekozen om een tijdlijn te maken met pacman. Echter kwam ik na feedback erachter dat er onvoldoende verschil is tussen de pacman versie's door de jaren heen. Bij de eerste versie kan je mijn oude idee zien. Door brain te stormen in de les heb ik besloten om de eeveelutions uit te werken in een website. Hierbij wil ik doormiddel van pokemon kaarten de eevee veranderen met behulp van HTML, CSS en Javascript. </summary>
 
   ### De eerste versie/schets:
   <img src="readme-images/idee1.PNG" width="375px" alt="eerste schets">
@@ -39,47 +39,55 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
     
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - ik wil leren hoe ik met css iets nauwkerig stijl en kan namaken
-  - Leren kleine interacties toe te voegen
-  - Nette code leren typen zonder beautify
+  - Ik mijn CSS styling verbeteren om nauwkeurig dingen te kunnen namaken (plaatsing van objecten, tekst en kleur in 1 object)
+  - Ik wil beter worden in het toepassen van keyframe animaties in mijn code om zo een betere interactie te creeeren tussen gebruiker en website. 
+  - Ik heb bijna nooit javascript gebruikt en zal graag willen leren hoe ik dit kan gebruiken, om zo elementen te kunnen veranderen doormiddel van queryselectors.
  
 </details>
 
 
-## Voortgang/Feedback 1
+## Voortgang/Feedback 1 (feedback Rowin + Sanne)
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Idee 1 (pacman tijdlijn) is niet divers genoeg
+  Sanne en Rowin zeiden beiden als feedback dat de pacman niet divers genoeg was door de jaren heen, waardoor mijn idee niet uitgebreid genoeg gemaakt kon worden.
 
   #### oplossing:
-  Nieuw idee bedacht waarbij ik heb gekozen om ipv het tijdlijn idee met pacman te kiezen voor de eeveelutions met pokemonkaarten (rowin vondt dit idee ook beter en een leuke interactie hebben.
+  Ik heb gebrainstormt in de les en gekozen om in plaats van een tijdlijn door de jaren heen de eeveelutions te doen. Waarbij je doormiddel van       pokemonkaarten informatie krijgt over de eevee en ze doormiddel van een klik ook kan laten evolueren. 
 
   ### Bevinding 2:
-  Te veel gebruik van classes. Ik heb ondervonden dat het gebruik van selectoren (elementen) gewenst is .
+  Aan het begin was ik volop bezig met het gebruik van classes. Echter kwam ik erachter dat het gebruik van selectoren gewenst is. 
 
   #### oplossing:
-  Opgezocht op w3 school hoe dit ongeveer werkte om mijn geheugen op te frissen en dit meteen gaan toepassen in me code, zodat ik niet later nog classes moet   weghalen en dan nog de selectoren moet uitvogelen. 
+  Meteen classes aangepast, zodat ik niet teveel code type waarbij ik classes gebruik. Door op w3school te kijken heb ik mijn geheugen opgefrist en heb ik meteen de selectoren toegepast. 
     
   ### Bevinding 3:
-  Card flip werkt niet + shadows staan niet in positie
+  Door het aanpassen van de classes naar selectors werkte mijn cardflip animatie op :hover niet meer
 
   #### oplossing:
-  Gekeken naar de selectoren én de grootte van de boxshadows + kaart en dit aangepast naar de gewenste grootte. Door de juiste selectors te gebruiken sprak     ik het juiste element aan in de code. 
+  Ik ben door de code heen gegaan en heb de HTML en CSS naast elkaar gehouden, zodat ik de correcte selector opschreef om de animatie weer te laten werken.
   
+      
   ### Bevinding 4:
-  Ik kan maar 1 kaart laten zien op 1 rij en als ik er meer toevoeg staan deze onder elkaar en niet naast elkaar
+  Bij de cardflip animatie verschuiven de elementen van de pokemonkaart te veel, waardoor je de helft ervan niet ziet. 
+   <img src="readme-images/padding.png" width="375px" alt="achterkant">
 
   #### oplossing:
-  Gevraagd aan rowin hoe ik er voor zorg dat ik just article ul li ul li toon met daarbij een kaart, zodat ze ook apart aan te passen zijn in css. Door het     correct in de HTML te zetten zorgde ik ervoor dat de kaarten netjes naast elkaar stonden.
-    
+  Ik heb samen met Sanne gekeken in chrome en het element geinspecteerd om te kijken of er ergens padding werd toegevoegd wat niet nodig was. Dit bleek ook te kloppen. Vervolgens heb ik een flex container gemaakt en justify content toegepast om de pokemonkaarten mooier te centreren.
+      
+  
   ### Bevinding 5:
-  Kaarten staan niet goed gepositioneerd (wel naast elkaar maar half in elkaar en de flip animatie is veel breder dan de kaart zelf)
+  Hoe wil ik de pokemon kaarten plaatsen en hoe pas ik progressive disclosure toe?
 
   #### oplossing:
-  Gekeken in chrome onder padding en deze in css weggehaald indien het niet nodig was (ook een flex container gemaakt met justify content) Dit zorgde ervoor   dat de card flip van juist breedde was.
+  Ik heb gekozen ervoor om de achterkant van de pokemonkaart te laten zien en deze doormiddel van een :hover of :focus-within informatie te laten tonen. Zo pas ik progressive disclosure toe waarbij de informatie over de pokemon kaart niet meteen te zien is. Verder heb laat ik de pokemonkaarten op horizontaal zien, zodat alle kaarten te zien zijn op het scherm.
+  
+  <img src="readme-images/horizontaal.png" width="375px" alt="horizontaal">
+  <img src="readme-images/duskstone.png" width="375px" alt="achterkant">
+  <img src="readme-images/achterkant.jpg" width="375px" alt="achterkant">
+    
       
 
       
@@ -89,88 +97,95 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
 
 
-## Voortgang/Feedback 2
+## Voortgang/Feedback 2 Feedback Aaron
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  Commentaar is niet duidelijk of in het engels (aaron)
+  Toen aaron door mijn code ging had hij moeite met het begrijpen waarvoor welke code was. Dit kwam doordat ik onvoldoende of onduidelijke commentaar had geschreven
 
   #### oplossing:
-  Door mijn commentaar gegaan en deze duidelijker gemaakt voor anderen
+  Ik ben langs al mijn commentaar gegaan en heb besloten hoe ik dit wil schrijven en wat voor beschrijving het moet geven. Zo heb ik ook commentaar in caps lock getypt om zo duidelijk te maken dat tussen deze regels alleen maar code staat die hiervoor gaat (als een soort hoofdstuk/onderwerp)
 
 
   ### Bevinding 2:
-  Javascript veranderd de image niet bij een click op de kaart
+  Ik wilde doormiddel van javascript de eevee onder aan de pagina veranderen naar een andere evolutie. Echter werkte dit niet als ik op de pokemonkaart drukte. Terwijl ik wel de juiste selector had gebruikt.
 
   #### oplossing:
-  Getest of dit met een button werkt (dit werkt) uiteindelijk bleek ik de selector niet goed te hebben getypt waardoor ik het element van de kaart niet         selecteerde
+  Ik heb getest of dit werkte met een normale button. En dit bleek uiteindelijk wel te werken. Sanne kwam met het idee om de button te plaatsen op de pokemonkaart en deze te stylen, zodat deze wegvalt, maar wel de hele kaart bedekt. Door dit toe te passen werd de pokemon kaart klikbaar doormiddel van een button.
 
   ### Bevinding 3:
-  Ik wil de lettertype van pokemon gebruiken, zodat het meer bij pokemon past. Alleen bij het inladen werkt deze niet op andere devices
+  Hoe kan ik ervoor zorgen dat de vormgeving meer past bij pokemon?
   
   #### oplossing:
-  Fontface toegevoegd met een url, zodat deze word overgenomen op andere devices
+  Ik heb de font van pokemon toegevoegd doormiddel van een fontface+url, zodat deze ook overgenomen wordt op andere devices en niet alleen op mijn pc. Hierdoor passen de kopteksten van de interface meer bij pokemon, waardoor het meer een geheel wordt.
+  
+  <img src="readme-images/fontface.JPG" width="375px" alt="font">
   
   ### Bevinding 4:
-  Gradient wordt bij elke kaart hetzelfde toegepast en niet uniek per kaart
+  Hoe kan ik ervoor zorgen dat de pokemonkaarten meer een eigen karakter hebben? En op een pokemonkaart lijken?
   
   ### oplossing:
-  nieuwe selectoren gemaakt specifiek voor elke unieke kaart, zodat ik deze in css kan aanpassen
+  Ik heb een container gemaakt en een foto erbij gehouden van de pokemonkaart en ben deze doormiddel van CSS gaan namaken. Vervolgens heb ik voor elke pokemon kaart nieuwe selectoren gemaakt specifiek voor elke unieke kaart. En heb ik hierbij toepasselijke gradients gezocht om zo elke kaart een uniekere look te geven die hoort bij de evolutiesteen.
+  
+  <img src="readme-images/voorbeeld2.png" width="375px" alt="font">
     
   ### Bevinding 5:
-  Het is nog niet mogelijk om doormiddel van tab door de elementen van mijn pagina te gaan
+ De pokemonkaarten zijn niet tabbaar, waardoor de website alleen te gebruiken is met een muis.
   
   ### oplossing:
-  Online gekeken en ik kwam erachter dat een image niet selecteerbaar is. De oplossing hiervoor is het een button te maken. Het selecteren van een button       werkt wel, maar hierdoor kwam er wel een nieuw probleem dat ik de button alleen kon selecteren, maar niet de kaart zelf
+  Uit onderzoek op het internet bleek dat images niet selecteerbaar zijn doormiddel van Tab. Sanne kwam met de oplossing om onder de pokemonkaart een button te plaatsen en deze te selecteren met een selector in CSS, zodat deze tabbaar is. Dit werkte en hangt ook samen met de klikbaarheid van de pokemonkaart als deze omdraait.
 
 </details>
 
 
 
-## Voortgang/Feedback 3
+## Voortgang/Feedback 3 (feedback beoordeling sanne)
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
   
   ### Bevinding 1:
-  De pokemon kaart was niet mooi afgerond, waardoor er witruimte was
+  "De pokemonkaarten lijken niet klikbaar/interactief"
 
   #### oplossing:
-  Border radius toegepast aan de voorkant, zodat het gelijk is (ook aan de boxshadow, zodat het de vorm volgt)
+  De oplossing hiervoor was erg simpel. Ik heb voor voor en achterkant cursor:pointer in css geschreven, zodat de pokemon kaart klikbaar lijkt en zo interactie vraagt van de gebruiker. Ook heb ik een kleine animatie toegevoegd die 1x afspeelt na 5 seconden om zo nieuwsgierigheid te wekken bij de gebruiker. 
 
   ### Bevinding 2:
-  Volgorde code klopte niet, elementen die voor de hele pagina waren stonden onderaan (zoals cursor of font)
+  Hoe kan ik ervoor zorgen dat je ziet dat je de kaart geselecteerd hebt?
  
   #### oplossing:
-  Nogmaals door de code gegaan, zodat zulke elementen netjes bovenaan staan
+  Ik heb een glow animatie toegevoegd als je over de kaart gaat toont het een semi-actieve staat. Vervolgens als je op de kaart drukt en de eevee veranderd dan zal de kaart een stukje omhoog gaan, om ze te tonen dat deze evolutie actief is. Doormiddel van dit wil ik de interactie tussen de pokemonkaart en gebruiker verbeteren en duidelijker maken.
+  
+  <img src="readme-images/glowkaart.png" width="375px" alt="bummer">
+  <img src="readme-images/animatiekaart.png" width="375px" alt="bummer">
 
   ### Bevinding 3:
-  Toevoegen button om het selecteerbaar te maken werkt niet, omdat dan de css stijl van de kaart er niet meer is
+  "Je hebt overal in je code geen CSS Custom properties gebruikt"
 
   #### oplossing:
-  Button onder de kaart doen, maar positioneren en stijlen. Dit zorgde ervoor dat de pokemon kaart te stijlen is met een leuke effect indien deze of :hover wordt of getabbed wordt. 
-    
-  ### Bevinding 4:
-  Ik heb hier en daar code staan die niet van toepassing was, maar als test werd gebruikt
-
-  #### oplossing:
-  Door me code heen gegaan en verwijderd wat niet nodig was en zo mijn code opgeschoont. 
-    
-  ### Bevinding 5:
-  Bij het uploaden naar github kwamen de images niet goed over of werden niet getoond
-
-  #### oplossing:
-  ./images ipv ../images en opgelet onder eigenschappen of er niet PNG of png stond (github is case sensitive)
+  Door al me code gegaan en CSS custom properties netjes in de :root geschreven en vervolgens met --var toegepast bij elke kleur. Nu kan ik ook gemakkelijk kleuren aan passen indien gewenst, zondat dat ik helemaal naar beneden hoef te scrollen in mijn css. 
+  <img src="readme-images/customprop.png" width="375px" alt="bummer">
   
-  ### Bevinding 6:
-  De informatie onder de stenen, is niet erg informatief (aaron)
+  ### Bevinding 4:
+  Hoe verander ik de naam van de Eevee onder aan de pagina, zodat deze past bij de evolutie?
 
   #### oplossing:
-  Informatie opgezocht over het gebruik van de stenen en in welke toepassing, zodat de lezer meer heeft aan de informatie
-    
-    
+  Ik heb gevraagd aan Yunus hoe dit werkte en heb vervolgens op internet de javascript hiervoor opgezocht. Ik moest hier voor de in dezelfde function zoals ik de image verander de innerhtml veranderen door een variable aan te maken van de eevee naam en deze dan te vervangen met een nieuwe naam. 
+  
+  <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
+  
+  ### Bevinding 5:
+  Als ik mijn website opende op een andere pc via github misde er een aantal afbeeldingen
+
+  #### oplossing:
+  Aaron had het in de les erover dat je moest opletten op hoofdletters onder eigenschappen van de foto's. Zo bleek dat github case sensitive is. Ik heb dit opgelost door ook ../images te schrijven ipv ./images en PNG of png. Uiteindelijk werken nu ook alle images op elke pc door dit aan te hebben gepast.  
+ 
+  
+  
+  
+   
 
 </details>
 
@@ -185,21 +200,28 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   ### Je uitkomst - karakteristiek screenshot(s):
   
   Dit is het uiteindelijke resultaat 8 pokemonkaarten die klikbaar, hoverbaar en tabbaar zijn waarbij als je erop klikt eevee veranderd naar een andere evolutie
-  <img src="readme-images/voorbeeld1.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatje(s)
-  <img src="readme-images/voorbeeld2.png" width="375px" alt="top">
+
   
   
   Ik heb geleerd beter met css te stijlen op basis van een plaatje. Ik heb een pokemon kaart tijdens het cssen er naast gezet en ben zo langzamerhand deze     gaan na maken. Verder had ik zelf ook niet verwacht dat ik bepaalde keuzes die ik maakte begreep. En merkte dat ik vrij doelgericht probeerde 1 voor 1 een   probleem op te lossen. Normaliter ben ik niet zo geduldig tijdens het coderen, maar door de rust te houden ben ik er wel stukke stressvrijer door heen       gekomen.
+  
+  - Geleerd hoe ik CSS stijl
+  - Geleerd Queryselectors te gebruiken
+  - Geleerd op te lossen op interactie tussen prototype en gebruiker
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
    Het is me jammer genoeg niet gelukt een keyframe animatie te maken van de transitie tussen pokemons. Ik had gelezen dat het te maken had met het feit dat    ik de image inlaad via javascript en heb geprobeerd dit in css nog aan te passen maar dit lukte jammer genoeg niet. Verder wilde ik een evolutie geluid      laten afspelen met daarbij het geluid van de eevee (elke evolutie heeft een ander geluid), maar door te weinig tijd + omdat ik de keyframe animaties er      niet in kreeg is dit ook niet als gevolg gelukt jammer genoeg
-  <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
+  
+  
+  - schrijven over dat ik niet de actieve tabbaar state kon aanpassen, terwijl klik wel werkt
+  - Keyframe animatie van de transitie tussen pokemons
+  
 </details>
 
 
@@ -236,5 +258,7 @@ https://wlearnsmart.com/javascript-change-image-onclick-event/
 Glow animatie
 https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow
 
+Shake animatie
+https://unused-css.com/blog/css-shake-animation/
 
 </details>
