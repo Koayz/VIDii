@@ -3,6 +3,7 @@
   box-sizing:border-box;  
 }
 
+
 /* Font */
 @font-face {
   font-family: 'Pokemon Solid';
@@ -11,24 +12,62 @@
   src: local('Pokemon Solid'), url('https://fonts.cdnfonts.com/s/17890/Pokemon Solid.woff') format('woff');
 }
 
+
+/* CSS Custom kleur properties */
+:root {
+--colorBackgroundBody: linear-gradient(0deg, rgba(152,228,43,1) 12%, rgba(89,219,127,1) 47%, rgba(52,235,230,1) 100%);
+--colorKop: rgb(247, 223, 7);
+--colorKopStroke: rgb(16, 16, 134);
+--colorBoxShadow: rgb(0, 0, 0);
+--colorLaadBg: rgb(182, 182, 182);
+--ColorLaad: rgb(0, 0, 0);
+
+/* Kleuren standaard styling kaarten */
+--colorKaartBg: rgb(176,88,247);
+--colorKaartBgGradient: linear-gradient(90deg, rgba(176,88,247,1) 0%, rgba(139,16,219,1) 44%, rgba(60,37,215,1) 100%);
+--colorKaartBorder: rgb(252, 211, 3);
+--colorKaart: rgb(255, 255, 255);
+
+/* Kleuren styling h2 en h3 */
+--colorKopTweeDrie: rgb(0, 0, 0);
+--colorKopTweeDrieBg: rgb(242,242,242);
+--colorKopTweeDrieGradient: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(226,226,226,1) 42%, rgba(190,190,190,1) 100%);
+--colorKopTweeDrieBoxShadow: rgb(73, 73, 73);
+
+/* Kleuren styling kaart tekst p */
+--colorKaartP: rgb(0, 0, 0);
+--colorKaartBorderP: rgb(140, 140, 137); 
+--colorKaartBoxShadowP: rgb(73, 73, 73);
+--colorKaartBgP: rgb(191,190,190, 0.6);
+
+/* Kleuren glowing animatie + rest van de kaarten */
+--glowFrom: rgb(255, 235, 8);
+--glowDuskTo: rgb(255, 235, 8); 
+
+
+--colorDawnKaart: rgb(217,217,217);
+--colorDawnGradient: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(89,240,210,1) 44%, rgba(114,95,241,1) 100%);
+--glowDawnTo: rgb(29, 29, 241); 
+
+}
+
 html, body {
   height:100%;
   margin:0;
 }
 
-button:not([disabled]) {
-  cursor:pointer;
-}
-
 
 /* jouw CSS vanaf hier */
 
-/* Cursor veranderen naar pokeball */ 
-* {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;} 
+/* Cursor veranderen naar pokeball 
+* {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;}  */
+
+button:not([enabled]) {
+  cursor:pointer;
+}
 
 body {
-  background: rgb(152,228,43);
-  background: linear-gradient(0deg, rgba(152,228,43,1) 12%, rgba(89,219,127,1) 47%, rgba(52,235,230,1) 100%);
+  background: var(--colorBackgroundBody);
 }
 
 
@@ -38,15 +77,30 @@ section h1 {
   margin: auto;
   text-align: center;
   font-size: 5em;
-  color: rgb(247, 223, 7);
-  -webkit-text-stroke: 0.04em rgb(16, 16, 134);
+  color: var(--colorKop);
+  -webkit-text-stroke: 0.04em var(--colorKopStroke);
   font-family: 'Pokemon Solid', sans-serif;
+  line-height: 0.6em;
+  padding: 1em;
 }
 
 /* Button styling weghalen */
 button {
   border: none;
   background: none;
+}
+
+article > ul {
+  overflow-x: auto;
+  padding: 1em;
+  gap: 1em;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Weghalen scroll bar chrome,safari en opera */
+article > ul::-webkit-scrollbar {
+display: none; 
 }
 
 /* Positie + weghalen styling ul */
@@ -58,11 +112,12 @@ article ul {
 }
 
  /* Kaart flip container */
-article > ul > li  {
+article > ul > li {
   background-color: transparent;
   width: 12.5em;
   height: 18.75em;
   perspective: 62.5em; 
+  cursor:pointer;
 }
 
 /* De container van de voor en achterkant + schaduw */
@@ -73,7 +128,7 @@ article > ul > li > ul {
   text-align: center;
   transition: 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,1);
+  box-shadow: 0 0.25em 0.5em 0 var(--colorBoxShadow);
   padding: 0;
   border-radius: 1.2em;
 }
@@ -81,9 +136,19 @@ article > ul > li > ul {
 
 /* Flip animatie en tab animatie draait 180graden */
 article > ul > li > ul:hover, 
-article > ul > li > ul:focus-within {
+article > ul > li > ul:focus-within     {
   transform: rotateY(180deg);
+} 
+
+
+
+
+/* Zorgt ervoor dat als de kaart actief is de kaart omhoog beweegt */
+article > ul > li:active, 
+article > ul > li:focus-within {
+  margin-top: -1em;
 }
+
 
 /* Positie voor en achterkant (webkit uitleggen) */
 article > ul > li > ul > li:first-of-type, 
@@ -98,8 +163,8 @@ article > ul > li > ul > li:last-of-type {
 
 /* Fallback als de image niet laad */
 article > ul > li > ul > li:first-of-type {
-  background-color: #bbb;
-  color: black;
+  background-color: var(--colorLaadBg);
+  color: var(--colorLaad);
 }
 
 /* Voorkant ronding and vorm  */
@@ -120,69 +185,71 @@ BEGIN ACHTERKANT KAART STIJL
 
 /* Hieronder staat de standaard styling van de kaarten */
 article > ul > li > ul > li:last-of-type {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  background: rgb(176,88,247);
-  background: linear-gradient(90deg, rgba(176,88,247,1) 0%, rgba(139,16,219,1) 44%, rgba(60,37,215,1) 100%);
+  background: var(--colorKaartBg);
+  background: var(--colorKaartBgGradient);
   border-style: solid;
   border-width: 0.625em;
-  border-color: rgb(252, 211, 3);
+  border-color: var(--colorKaartBorder);
   border-radius: 1.1em;
-  color: white;
+  color: var(--colorKaart);
   transform: rotateY(180deg);
   width: 12.5em;
 } 
 
 article > ul > li > ul > li:last-of-type > h2 {
-  color: black;
+  color: var(--colorKopTweeDrie);
   font-family: monospace;
   font-style: italic;
   font-size: 1em;
   text-align: left;
-  background: rgb(242,242,242);
-  background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(226,226,226,1) 42%, rgba(190,190,190,1) 100%);
-  padding: 0.2em 0.2em 0.2em 0.2em;
+  background: var(--colorKopTweeDrieBg);
+  background: var(--colorKopTweeDrieGradient);
+  padding: 0.2em 0.2em 0.2em 0.6em;
   margin: 0 0 0 0;
   border-radius: 0.1em;
-  box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
+  box-shadow: 0 0.25em 0.5em 0 var(--colorKopTweeDrieBoxShadow);
 
 }
 
 article > ul > li > ul > li:last-of-type > h3 {
-color: black;
-font-family: monospace;
-font-size: 1em;
-font-weight: bold;
-text-align: left;
-background: rgb(242,242,242);
-background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(226,226,226,1) 42%, rgba(190,190,190,1) 100%);
-padding: 0.2em 0 0.2em 0.4em;
-margin: 0 0 0 0;
-border-radius: 0.2em;
-box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
+  order: -1;
+  color: var(--colorKopTweeDrie);
+  font-family: monospace;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  background: var(--colorKopTweeDrieBg);
+  background: var(--colorKopTweeDrieGradient);
+  padding: 0.2em 0 0.2em 0.6em;
+  margin: 0 0 0 0;
+  border-radius: 0.2em;
+  box-shadow: 0 0.25em 0.5em 0 var(--colorKopTweeDrieBoxShadow);
 }
 
 /* Image grootte van de evolutiestenen */
 article > ul > li > ul > li:last-of-type > img {
-width: 10.5em;
-height: 7em;
+  width: 10.25em;
+  height: auto;
+  margin: 0 .5em 0 .5em;
 }
 
 article > ul > li > ul > li:last-of-type > p {
-color: black;
-font-size: 0.8em;
-font-weight: lighter;
-text-align: center;
-height: 9em;
-margin: 0 0.5em 3em 0.5em;
-padding: 1em 0.5em 1em 0.3em;
-border-style: solid;
-border-color: rgb(140, 140, 137);
-border-width: 0.1em;
-border-radius: 0.1em;
-box-shadow: 0 0.25em 0.5em 0 rgb(73, 73, 73);
-background: rgb(191,190,190, 0.6)
-
-
+  color: var(--colorKaartP);
+  font-size: 0.8em;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 0.5em 0.5em 0.5em;
+  padding: 1em 0.5em 1em 0.3em;
+  border-style: solid;
+  border-color: var(--colorKaartBorderP);
+  border-width: 0.1em;
+  border-radius: 0.1em;
+  box-shadow: 0 0.25em 0.5em 0 var(--colorKaartBoxShadowP);
+  background: var(--colorKaartBgP);
+  flex-grow: 1;
 }
 
 
@@ -197,11 +264,11 @@ animation: glowDusk 1s infinite alternate;
 
 @keyframes glowDusk {
   from {
-    box-shadow: 0 0 0.625em -0.625em rgb(255, 235, 8);
+    box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
     border-radius: 0.1em;
   }
   to {
-    box-shadow: 0 0 0.625em 0.625em rgb(181, 29, 241); 
+    box-shadow: 0 0 0.625em 0.625em var(--glowDuskTo);
     border-radius: 0.1em;
 }
 }
@@ -234,11 +301,11 @@ animation: glowDawn 1s infinite alternate;
 
 @keyframes glowDawn {
   from {
-    box-shadow: 0 0 0.625em -0.625em rgb(255, 235, 8);
+    box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
     border-radius: 0.1em;
   }
   to {
-    box-shadow: 0 0 0.625em 0.625em rgb(29, 29, 241); 
+    box-shadow: 0 0 0.625em 0.625em var(--glowDawnTo);
     border-radius: 0.1em;
 }
 
@@ -256,7 +323,7 @@ article > ul > li:nth-of-type(3) > ul > li:last-of-type > button {
   
   @keyframes glowFire {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
@@ -279,7 +346,7 @@ article > ul > li:nth-of-type(4) > ul > li:last-of-type > button {
   
   @keyframes glowThunder {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
@@ -302,7 +369,7 @@ article > ul > li:nth-of-type(5) > ul > li:last-of-type > button {
   
   @keyframes glowLeaf {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
@@ -325,7 +392,7 @@ article > ul > li:nth-of-type(6) > ul > li:last-of-type > button {
   
   @keyframes glowShiny {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
@@ -348,7 +415,7 @@ article > ul > li:nth-of-type(7) > ul > li:last-of-type > button {
   
   @keyframes glowWater {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
@@ -371,7 +438,7 @@ article > ul > li:nth-of-type(8) > ul > li:last-of-type > button {
   
   @keyframes glowSun {
     from {
-      box-shadow: 0 0 0.625em -0.625emrgb(255, 235, 8);
+      box-shadow: 0 0 0.625em -0.625em var(--glowFrom);
       border-radius: 0.1em;
     }
     to {
