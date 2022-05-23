@@ -121,7 +121,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   #### oplossing:
   Ik heb de font van pokemon toegevoegd doormiddel van een fontface+url, zodat deze ook overgenomen wordt op andere devices en niet alleen op mijn pc. Hierdoor passen de kopteksten van de interface meer bij pokemon, waardoor het meer een geheel wordt.
   
-  <img src="readme-images/fontface.JPG" width="375px" alt="font">
+  <img src="readme-images/fontface.png" width="375px" alt="font">
   
   ### Bevinding 4:
   Hoe kan ik ervoor zorgen dat de pokemonkaarten meer een eigen karakter hebben? En op een pokemonkaart lijken?
