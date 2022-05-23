@@ -85,7 +85,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Ik heb gekozen ervoor om de achterkant van de pokemonkaart te laten zien en deze doormiddel van een :hover of :focus-within informatie te laten tonen. Zo pas ik progressive disclosure toe waarbij de informatie over de pokemon kaart niet meteen te zien is. Verder heb laat ik de pokemonkaarten op horizontaal zien, zodat alle kaarten te zien zijn op het scherm.
   
   <img src="readme-images/horizontaal.png" width="375px" alt="horizontaal">
-  <img src="readme-images/duskstone.png" width="375px" alt="achterkant">
+  <img src="readme-images/duskstone.PNG" width="375px" alt="achterkant">
   <img src="readme-images/achterkant.jpg" width="375px" alt="achterkant">
     
       
@@ -166,7 +166,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
   #### oplossing:
   Door al me code gegaan en CSS custom properties netjes in de :root geschreven en vervolgens met --var toegepast bij elke kleur. Nu kan ik ook gemakkelijk kleuren aan passen indien gewenst, zondat dat ik helemaal naar beneden hoef te scrollen in mijn css. 
-  <img src="readme-images/customprop.png" width="375px" alt="bummer">
+  <img src="readme-images/customprop.png" width="450px" alt="bummer">
   
   ### Bevinding 4:
   Hoe verander ik de naam van de Eevee onder aan de pagina, zodat deze past bij de evolutie?
