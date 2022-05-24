@@ -16,8 +16,6 @@ var waterStone = document.querySelector("article > ul > li:nth-of-type(7) > ul >
 var sunStone  = document.querySelector("article > ul > li:nth-of-type(8) > ul > li:last-of-type > button");
 
 
-// Verandering naam
-var eeveeName = document.querySelector("h4")
 
 // Click functies
 duskStone.addEventListener("click", veranderDusk);
@@ -28,11 +26,6 @@ leafStone.addEventListener("click", veranderLeaf);
 shinyStone.addEventListener("click", veranderShiny);
 waterStone.addEventListener("click", veranderWater);
 sunStone.addEventListener("click", veranderSun);
-
-function myFunction() {
-var testtest = document.querySelector("article > ul > li > ul");
-element.classList.add("otherclass");
-}
 
 
 // Verander naam + image 
