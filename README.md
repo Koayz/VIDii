@@ -82,7 +82,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Hoe wil ik de pokemon kaarten plaatsen en hoe pas ik progressive disclosure toe?
 
   #### oplossing:
-  Ik heb gekozen ervoor om de achterkant van de pokemonkaart te laten zien en deze doormiddel van een :hover of :focus-within informatie te laten tonen. Zo pas ik progressive disclosure toe waarbij de informatie over de pokemon kaart niet meteen te zien is. Verder heb laat ik de pokemonkaarten op horizontaal zien, zodat alle kaarten te zien zijn op het scherm.
+  Ik heb gekozen ervoor om de achterkant van de pokemonkaart te laten zien en deze doormiddel van een :hover of :focus-within informatie te laten tonen. Zo pas ik progressive disclosure toe waarbij de informatie over de pokemon kaart niet meteen te zien is. Verder laat ik de pokemonkaarten horizontaal zien, zodat alle kaarten te zien zijn op het scherm.
   
   <img src="readme-images/duskstone.jpg" width="375px" alt="dukstone">
   <img src="readme-images/achterkant.jpg" width="375px" alt="achterkant">
@@ -110,7 +110,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
 
   ### Bevinding 2:
-  Ik wilde doormiddel van javascript de eevee onder aan de pagina veranderen naar een andere evolutie. Echter werkte dit niet als ik op de pokemonkaart drukte. Terwijl ik wel de juiste selector had gebruikt.
+  Ik wilde doormiddel van javascript de eevee onder aan de pagina veranderen naar een andere evolutie. Echter werkte dit niet als ik op de pokemonkaart drukte. Terwijl ik wel de juiste selector had gebruikt. (uiteindelijk bleek dat je een image niet klikbaar kan maken)
 
   #### oplossing:
   Ik heb getest of dit werkte met een normale button. En dit bleek uiteindelijk wel te werken. Sanne kwam met het idee om de button te plaatsen op de pokemonkaart en deze te stylen, zodat deze wegvalt, maar wel de hele kaart bedekt. Door dit toe te passen werd de pokemon kaart klikbaar doormiddel van een button.
@@ -150,7 +150,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   "De pokemonkaarten lijken niet klikbaar/interactief"
 
   #### oplossing:
-  De oplossing hiervoor was erg simpel. Ik heb voor voor en achterkant cursor:pointer in css geschreven, zodat de pokemon kaart klikbaar lijkt en zo interactie vraagt van de gebruiker. Ook heb ik een kleine animatie toegevoegd die 1x afspeelt na 5 seconden om zo nieuwsgierigheid te wekken bij de gebruiker. 
+  De oplossing hiervoor was erg simpel. Ik heb voor voor en achterkant cursor:pointer in css geschreven, zodat de pokemon kaart klikbaar lijkt en zo interactie vraagt van de gebruiker. Ook heb ik een kleine animatie toegevoegd die 3x afspeelt na 5 seconden om zo nieuwsgierigheid te wekken bij de gebruiker. 
   
   <img src="readme-images/animatiekaart.png" width="375px" alt="bummer">
 
