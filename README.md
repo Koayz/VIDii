@@ -84,10 +84,10 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   #### oplossing:
   Ik heb gekozen ervoor om de achterkant van de pokemonkaart te laten zien en deze doormiddel van een :hover of :focus-within informatie te laten tonen. Zo pas ik progressive disclosure toe waarbij de informatie over de pokemon kaart niet meteen te zien is. Verder heb laat ik de pokemonkaarten op horizontaal zien, zodat alle kaarten te zien zijn op het scherm.
   
-  <img src="readme-images/horizontaal.png" width="450px" alt="horizontaal">
   <img src="readme-images/duskstone.jpg" width="375px" alt="dukstone">
   <img src="readme-images/achterkant.jpg" width="375px" alt="achterkant">
-    
+  <img src="readme-images/horizontaal.png" width="450px" alt="horizontaal">
+ 
       
 
       
