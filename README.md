@@ -167,7 +167,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   "Je hebt overal in je code geen CSS Custom properties gebruikt"
 
   #### oplossing:
-  Door al me code gegaan en CSS custom properties netjes in de :root geschreven en vervolgens met --var toegepast bij elke kleur. Nu kan ik ook gemakkelijk kleuren aan passen indien gewenst, zondat dat ik helemaal naar beneden hoef te scrollen in mijn css. 
+  Door al me code gegaan en CSS custom properties netjes in de :root geschreven en vervolgens met --var toegepast bij elke kleur. Nu kan ik ook gemakkelijk kleuren aan passen indien gewenst, zonder dat dat ik helemaal naar beneden hoef te scrollen in mijn css en moet zoeken welke kleur voor wat is.
   <img src="readme-images/customprop.png" width="450px" alt="bummer">
   
   ### Bevinding 4:
