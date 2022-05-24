@@ -221,6 +221,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Verder had ik feedback gekregen van Sanne dat het niet duidelijk was welke pokemon kaart geselecteerd was als ik op een evolutie clickte. Ik heb geprobeerd dit met javascript op te lossen door een class toe te voegen als de click event gebeurd maar dit lukte niet. Vervolgens heb ik in plaats van dat in css een :active en :hover-within toegepast op de pokemon kaart en daarbij een negative -1em toegepast op de margin-top, zodat de pokemonkaart omhooggaat als die actief is. Alleen werkt deze oplossing niet 100%. Het werkt namelijk wel bij een click, maar bij een tab werkt dit niet, omdat de pokemonkaart dan wel gesloten wordt als je verder tabt. Dit sluit ook aan bij mijn volgende probleem, omdat het mij niet lukte om een class toe te voegen op een element lukte het mij ook niet om de glow effect te veranderen (dit leek mij een leuke extra om de interactie te verbeteren, zodat de gebruiker weet op welke kaarten die al heeft gedrukt. Hieronder de code die ik heb geprobeerd in beide gevallen. Ik had dan vervolgens in CSS de kleuren proberen te veranderen, maar dit werkte niet en is mij jammer genoeg ook uiteindelijk niet gelukt. 
   
   <img src="readme-images/voorbeeldjs.png" width="375px" alt="bummer">
+  <img src="readme-images/voorbeeldjs2.png" width="375px" alt="bummer">
   
   
  
