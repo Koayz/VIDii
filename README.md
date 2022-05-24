@@ -151,6 +151,8 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
 
   #### oplossing:
   De oplossing hiervoor was erg simpel. Ik heb voor voor en achterkant cursor:pointer in css geschreven, zodat de pokemon kaart klikbaar lijkt en zo interactie vraagt van de gebruiker. Ook heb ik een kleine animatie toegevoegd die 1x afspeelt na 5 seconden om zo nieuwsgierigheid te wekken bij de gebruiker. 
+  
+  <img src="readme-images/animatiekaart.png" width="375px" alt="bummer">
 
   ### Bevinding 2:
   Hoe kan ik ervoor zorgen dat je ziet dat je de kaart geselecteerd hebt?
@@ -159,7 +161,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Ik heb een glow animatie toegevoegd als je over de kaart gaat toont het een semi-actieve staat. Vervolgens als je op de kaart drukt en de eevee veranderd dan zal de kaart een stukje omhoog gaan, om ze te tonen dat deze evolutie actief is. Doormiddel van dit wil ik de interactie tussen de pokemonkaart en gebruiker verbeteren en duidelijker maken.
   
   <img src="readme-images/glowkaart.png" width="375px" alt="bummer">
-  <img src="readme-images/animatiekaart.png" width="375px" alt="bummer">
+
 
   ### Bevinding 3:
   "Je hebt overal in je code geen CSS Custom properties gebruikt"
@@ -198,29 +200,30 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
+  Het uiteindelijke resultaat zijn 8 pokemonkaarten die interactie opwekken bij de gebruiker om zo door de evolutie te gaan van de eevee's. Je kan ze doormiddel van TAB of click gebruiken.
   
-  Dit is het uiteindelijke resultaat 8 pokemonkaarten die klikbaar, hoverbaar en tabbaar zijn waarbij als je erop klikt eevee veranderd naar een andere evolutie
+    <img src="readme-images/voorbeeld1.png" width="375px" alt="bummer">
+  <img src="readme-images/voorbeeld2.png" width="375px" alt="bummer">
+  <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
+  Ik heb geleerd aan de hand van een afbeelding een pokemonkaart na te maken doormiddel van een live server open te houden en zo stapsgewijs de CSS te schrijven. Ook heb ik geleerd hoe ik keyframes toepas om zo kleine animaties toe te voegen om de interactie tussen de gebruiker en product te verbeteren (iets dat heel belangrijk is) Ookal lag de focus meer op HTML en CSS heb ik ook veel geleerd over Javascript tijdens interface en interactie en hoe ik gebruik kan maken van queryselectors om zo afbeeldingen en namen te vervangen als er een bepaalde handeling uit wordt gevoerd (in dit geval een click of tab enter). Ik kan nu als ontwerper ook beter begrijpen en overleggen met developers wat wel of niet mogelijk zal gaan zijn in code als ik een ontwerp maak voor hen. Een skill die zeker van pas gaat komen later.
   
-  
-  Ik heb geleerd beter met css te stijlen op basis van een plaatje. Ik heb een pokemon kaart tijdens het cssen er naast gezet en ben zo langzamerhand deze     gaan na maken. Verder had ik zelf ook niet verwacht dat ik bepaalde keuzes die ik maakte begreep. En merkte dat ik vrij doelgericht probeerde 1 voor 1 een   probleem op te lossen. Normaliter ben ik niet zo geduldig tijdens het coderen, maar door de rust te houden ben ik er wel stukke stressvrijer door heen       gekomen.
-  
-  - Geleerd hoe ik CSS stijl
-  - Geleerd Queryselectors te gebruiken
-  - Geleerd op te lossen op interactie tussen prototype en gebruiker
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-   Het is me jammer genoeg niet gelukt een keyframe animatie te maken van de transitie tussen pokemons. Ik had gelezen dat het te maken had met het feit dat    ik de image inlaad via javascript en heb geprobeerd dit in css nog aan te passen maar dit lukte jammer genoeg niet. Verder wilde ik een evolutie geluid      laten afspelen met daarbij het geluid van de eevee (elke evolutie heeft een ander geluid), maar door te weinig tijd + omdat ik de keyframe animaties er      niet in kreeg is dit ook niet als gevolg gelukt jammer genoeg
+
+  Ik vond het erg lastig om javascript te gebruiken. Doormiddel van hulp van Yunus heb ik gelukkig de queryselectors werkend gekregen om zo de eevee en naam te vervangen doormiddel van een click. 
+  Wat me jammer genoeg niet gelukt is ios om een keyframe animatie te maken van de transitie tussen de pokemons. Uit onderzoek op het internet bleek dat dit kwam, omdat ik de image inlaad via javascript en dat de image niet al op de pagina staat met 0 opacity. En dat deze dan tijdens het evolueren omwisselt met de evolutie frame en de pokemon. 
+  Verder had ik feedback gekregen van Sanne dat het niet duidelijk was welke pokemon kaart geselecteerd was als ik op een evolutie clickte. Ik heb geprobeerd dit met javascript op te lossen door een class toe te voegen als de click event gebeurd maar dit lukte niet. Vervolgens heb ik in plaats van dat in css een :active en :hover-within toegepast op de pokemon kaart en daarbij een negative -1em toegepast op de margin-top, zodat de pokemonkaart omhooggaat als die actief is. Alleen werkt deze oplossing niet 100%. Het werkt namelijk wel bij een click, maar bij een tab werkt dit niet, omdat de pokemonkaart dan wel gesloten wordt als je verder tabt. Dit sluit ook aan bij mijn volgende probleem, omdat het mij niet lukte om een class toe te voegen op een element lukte het mij ook niet om de glow effect te veranderen (dit leek mij een leuke extra om de interactie te verbeteren, zodat de gebruiker weet op welke kaarten die al heeft gedrukt. Hieronder de code die ik heb geprobeerd in beide gevallen. Ik had dan vervolgens in CSS de kleuren proberen te veranderen, maar dit werkte niet en is mij jammer genoeg ook uiteindelijk niet gelukt. 
+  
+  <img src="readme-images/voorbeeldjs.png" width="375px" alt="bummer">
   
   
-  - schrijven over dat ik niet de actieve tabbaar state kon aanpassen, terwijl klik wel werkt
-  - Keyframe animatie van de transitie tussen pokemons
+ 
+
   
 </details>
 
