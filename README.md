@@ -174,7 +174,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Hoe verander ik de naam van de Eevee onder aan de pagina, zodat deze past bij de evolutie?
 
   #### oplossing:
-  Ik heb gevraagd aan Yunus hoe dit werkte en heb vervolgens op internet de javascript hiervoor opgezocht. Ik moest hier voor de in dezelfde function zoals ik de image verander de innerhtml veranderen door een variable aan te maken van de eevee naam en deze dan te vervangen met een nieuwe naam. 
+  Ik heb gevraagd aan Yunus hoe dit werkte en heb vervolgens op internet de javascript hiervoor opgezocht. Ik moest hier voor in dezelfde function zoals ik de image verander de innerhtml veranderen door een variable aan te maken van de eevee naam en deze dan te vervangen met een nieuwe naam. 
   
   <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
   
