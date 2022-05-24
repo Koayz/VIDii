@@ -202,7 +202,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   ### Je uitkomst - karakteristiek screenshot(s):
   Het uiteindelijke resultaat zijn 8 pokemonkaarten die interactie opwekken bij de gebruiker om zo door de evolutie te gaan van de eevee's. Je kan ze doormiddel van TAB of click gebruiken.
   
-    <img src="readme-images/voorbeeld1.png" width="375px" alt="bummer">
+    <img src="readme-images/interface.png" width="375px" alt="bummer">
   <img src="readme-images/voorbeeld2.png" width="375px" alt="bummer">
   <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
   
