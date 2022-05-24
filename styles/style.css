@@ -103,8 +103,8 @@ section h1 {
   color: var(--colorKop);
   -webkit-text-stroke: 0.04em var(--colorKopStroke);
   font-family: 'Pokemon Solid', sans-serif;
-  line-height: 0.6em;
-  padding: 1em;
+  line-height: 1em;
+  padding: 0.7em;
 }
 
 /* Button styling weghalen */
