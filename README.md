@@ -67,7 +67,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   Door het aanpassen van de classes naar selectors werkte mijn cardflip animatie op :hover niet meer
 
   #### oplossing:
-  Ik ben door de code heen gegaan en heb de HTML en CSS naast elkaar gehouden, zodat ik de correcte selector opschreef om de animatie weer te laten werken.
+  Ik ben door de code heen gegaan en heb de HTML en CSS naast elkaar gehouden, zodat ik de correcte selector opschreef om de animatie weer te laten werken. Vervolgens werkte de animatie ook weer. 
   
       
   ### Bevinding 4:
@@ -179,7 +179,7 @@ Mijn startniveau is blauw. Door de jaren heb ik wel coderen gehad, maar was ik e
   <img src="readme-images/voorbeeld3.png" width="375px" alt="bummer">
   
   ### Bevinding 5:
-  Als ik mijn website opende op een andere pc via github misde er een aantal afbeeldingen
+  Als ik mijn website open op een andere pc via github misde er een aantal afbeeldingen
 
   #### oplossing:
   Aaron had het in de les erover dat je moest opletten op hoofdletters onder eigenschappen van de foto's. Zo bleek dat github case sensitive is. Ik heb dit opgelost door ook ../images te schrijven ipv ./images en PNG of png. Uiteindelijk werken nu ook alle images op elke pc door dit aan te hebben gepast.  
